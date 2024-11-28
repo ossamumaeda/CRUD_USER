@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form id="invoice-form" action="/users/" method="POST">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label>Cpf:</label>
+        <input autocomplete="off" class="form-control mask-cpf" id="cpf" name="cpf"  maxlength="14" placeholder="CPF" required>
+
+        <label for="date">Data de nascimento:</label>
+        <input id="date" name="date" class="form-control mask-date valid-age" required><br>
+
+        <label for="fone">Telefone:</label>
+        <input id="fone" name="fone" class="mask-phone-ddd" required><br>
+
+        <label for="cep">Cep:</label>
+        <input type="number" id="cep" name="cep" required><br>
+
+        <label for="municipio">Municipio:</label>
+        <input type="text" id="municipio" name="municipio" required><br>
+
+        <label for="rua">Rua:</label>
+        <input type="text" id="rua" name="rua" required><br>
+
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required><br>
+
+
+
+        <button type="submit">Register</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src='../assets/cadastro.js'></script>
+
+
+</body>
+</html>
